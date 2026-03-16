@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Babylon BEAM Viewer</title>
+
+<script src="https://cdn.babylonjs.com/babylon.js"></script>
+<script src="https://cdn.babylonjs.com/materialsLibrary/babylon.gridMaterial.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<aside class="left-panel">
+
+<h1>Babylon BEAM Viewer</h1>
+
+<div class="button-row">
+
+<button onclick="loadProject()">Load Project</button>
+<button onclick="clearScene()">Clear Scene</button>
+
+</div>
+
+<section class="card">
+
+<h2>JSON preview</h2>
+
+<div id="jsonPreview" class="json-preview">
+Belum ada data.
+</div>
+
+</section>
+
+<section class="card">
+
+<h2>Cara pakai viewer</h2>
+
+<div class="help-text">
+
+<p><b>Zoom</b> : scroll mouse</p>
+<p><b>Rotate</b> : klik kiri + drag</p>
+<p><b>Pan</b> : klik kanan + drag</p>
+
+</div>
+
+</section>
+
+</aside>
+
+
+<main class="main-panel">
+
+<div class="viewer-wrap">
+
+<div class="axis-info">
+<div><b>X</b> = kiri ↔ kanan</div>
+<div><b>Y</b> = depan ↔ belakang</div>
+<div><b>Z</b> = tinggi</div>
+</div>
+
+<canvas id="renderCanvas"></canvas>
+
+</div>
+
+<section class="bottom-info">
+
+<div class="card section-card">
+
+<h2>Informasi Section</h2>
+
+<div id="sectionInfo" class="horizontal-info">
+Belum ada beam dipilih.
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
